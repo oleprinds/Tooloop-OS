@@ -196,7 +196,7 @@ chmod +x /opt/tooloop/scripts/*
 
 # Get settings server
 # TODO: remove branch when merging
-git clone --single-branch --branch appcenter https://github.com/vollstock/Tooloop-Settings-Server.git /opt/tooloop/settings-server
+git clone --single-branch --branch appcenter https://github.com/oleprinds/Tooloop-Settings-Server.git /opt/tooloop/settings-server
 
 # Install dependencies
 /bin/bash /opt/tooloop/settings-server/install-dependencies.sh
@@ -286,8 +286,10 @@ touch /opt/tooloop/settings-server/installed_app/.keep
 # For now:
 git clone https://github.com/Tooloop/Tooloop-Packages.git /home/tooloop/Tooloop-Packages
 cd /home/tooloop/Tooloop-Packages
+pwd
+ls
 ./build
-./update-packages
+#./update-packages
 
 # Chown things to the tooloop user
 chown -R tooloop:tooloop /assets/
