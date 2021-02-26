@@ -286,9 +286,7 @@ touch /opt/tooloop/settings-server/installed_app/.keep
 # For now:
 git clone https://github.com/Tooloop/Tooloop-Packages.git /home/tooloop/Tooloop-Packages
 cd /home/tooloop/Tooloop-Packages
-pwd
-ls
-./build
+./build.sh
 #./update-packages
 
 # Chown things to the tooloop user
